@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar bg-light py-0">
+        <div>
+          <img src="img/logo.png" alt="#" width="270x" height="100px" />
+        </div>
+        <div>
+          <div id="links">
+            <a href="login.html" class="btn btn-outline-success">Login</a>
+            <a href="register.html" class="btn btn-success ml-2">Register</a>
+          </div>
+          <div id="loggedin">
+            <span id="hello" class="text-danger"></span>
+            <div class="">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <span id="pNum"></span>
+            </div>
+            <a class="btn btn-outline-danger" id="logout-btn">logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div
+        class="container d-flex justify-content-between flex-wrap p-0"
+        id="cart-item-con"
+      ></div>
+      <div class="text-center">
+        <h2 id="total-price"></h2>
+      </div>
+    </section>
+    <section class="text-center my-5 pt-3">
+        <h2>Favourite Items</h2>
+        <div class="bg-success rounded mb-3 line"></div>
+      <div
+        class="container d-flex justify-content-between bg-ssuccess"
+        id="favourite-item-con"
+      ></div>
+    </section>
+    <script src="js/cart.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/products.js"></script>
+  </body>
+</html>
