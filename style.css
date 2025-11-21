@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-family: "Fleur De Leah", cursive;
+    font-size: 46px;
+}
+.reg-page ,.log-page{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#loggedin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+    width: 300px;
+} 
+ul{
+    list-style: none;
+}
+.first-con{
+    margin-top:150px;
+}
+.card{
+    width: 25%;
+    transition: 0.2s;
+    
+}
+.card img{
+    height: 300px;
+}
+.card-body,#cart{
+    line-height:15px ;
+}
+.card i{
+    font-size: 20px;
+
+}
+.card:hover{
+    border: 2px solid #4EB862;
+    margin-top: -5px;
+    box-shadow: 2px 2px 30px rgb(186, 183, 183);
+}
+h2{
+    font-size: 22px;
+}
+.cart-con{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 110%;
+    background-color: white; 
+}
+.cart-icon:hover{
+    cursor: pointer;
+}
+#cart-item-con{
+    margin-top: 150px;
+}
+#cart-item-con .card{
+    height:  230px;
+}
+#cart-item-con .cart-img{
+    height: 100%;
+    border-radius: 5px;
+}
+#favourite-item-con{
+    overflow-x:scroll;
+}
+.line{
+    width: 150px;
+    height: 3px;
+    margin: auto;
+}
