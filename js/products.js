@@ -4,21 +4,21 @@ const products = [
         title: 'Brown Mug',
         price: 50,
         category: 'mug',
-        imgUrl: '../img/mug1.jpg'
+        imgUrl: 'img/mug1.jpg'
     },
     {
         id: 2,
         title: 'Cream Mug',
         price: 50,
         category: 'mug',
-        imgUrl: '../img/mug2.jpg'
+        imgUrl: 'img/mug2.jpg'
     },
     {
         id: 3,
         title: 'Pastel Mug',
         price: 40,
         category: 'mug',
-        imgUrl: '../img/mug3.jpg'
+        imgUrl: 'img/mug3.jpg'
     },
     {
         id: 4,
@@ -64,4 +64,5 @@ const products = [
         imgUrl: 'img/plate3.jpg'
     }
 ];
+
 displayItem(products)
